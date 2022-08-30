@@ -34,15 +34,15 @@ print("The total \b area is: ", area)
 print('\n')
 
 #Question 3
-#Write a program that asks the user to input his height in cetimeters. Your program should convert and display the
+#Write a program that asks the user to input his height in centimeters. Your program should convert and display the
 #height in Feet and inches. (Hint: 1 inch equals 2.54 centimeters and 1 foot equals 12 inches)
-
+import math
 height=float(input('\n'"Enter person's height in Centimeters: "))
 inches=height*0.3937
 feet=height*0.0328084
 
 
 
-print('\n'"The height of the person in Feet is: ", feet)
-print('\n'"The height of the person in inches is:",inches)
+print('\n'"The height of the person in Feet is: ",math.trunc(feet))
+print('\n'"The height of the person in inches is:",math.trunc(inches))
 
